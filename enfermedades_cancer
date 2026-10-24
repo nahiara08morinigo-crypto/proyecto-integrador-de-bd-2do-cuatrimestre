@@ -1,1 +1,20 @@
-
+#proyecto_integrador_enfermedades}
+#create schema BD_Enfermedades_Argentina;
+use BD_Enfermedades_Argentina;
+create table enfermedades(
+		idenfermedad Int primary key not null,
+        nombre varchar (30) not null,
+       descripcion varchar (30) not null,
+		agentecasual varchar (30) not null
+        );
+	create table reportes(
+		idreportes Int primary key not null,
+        fecha_reporte varchar (30) not null,
+        cantidad_casos int not null,
+		cantidad_fellecidos int not null
+        );
+        create table Provincia(
+		idprovincia Int primary key not null,
+        nombre varchar (30) not null,
+        region varchar (30) not null
+        );
