@@ -1,5 +1,4 @@
-# proyecto-integrador-de-bd-2do-cuatrimestre
-#create schema BD_Secundaria;
+create schema BD_Secundaria;
 use BD_Secundaria;
 create table Escuela(
 		idescuela Int primary key not null,
@@ -9,35 +8,25 @@ create table Escuela(
         );
 	create table Directivos(
 		iddirectivos Int primary key not null,
-        nombre varchar (30) not null,
-        apellido varchar (30) not null,
 		cargo varchar (30) not null
         );
         create table profesores(
 		idprofesores Int primary key not null,
-        nombre varchar (30) not null,
-        apellido varchar (30) not null,
         horario varchar (30) not null,
 		materia varchar (30) not null
         );
         create table alumnos(
-		iddirectivos Int primary key not null,
-        nombre varchar (30) not null,
-        apellido varchar (30) not null,
+		idalumnos Int primary key not null,
         edad int not null,
         sexo varchar (30) not null,
 		curso varchar (30) not null
         );
         create table axiliares(
-		iddirectivos Int primary key not null,
-        nombre varchar (30) not null,
-        apellido varchar (30) not null,
+		idauxiliares Int primary key not null,
         funcion varchar (30) not null
         );
         create table preceptores(
-		iddirectivos Int primary key not null,
-        nombre varchar (30) not null,
-        apellido varchar (30) not null,
+		idpreceptores Int primary key not null,
         cursos_a_cargo varchar (30) not null,
 		turno varchar (30) not null
         );
@@ -54,9 +43,475 @@ create table Escuela(
 		numero_alumnos int not null
         );
         create table laboratorios(
-		iddirectivos Int primary key not null,
+		idlaboratorios Int primary key not null,
        numero_laboratorio int not null,
 		cantidad_pc	int not null,
 		cantidad_mesa int not null,
 		cantidad_sillas int not null
         );
+         create table persona(
+		idpersona Int primary key not null,
+       nombre int not null,
+		apellido int not null,
+		telefono int not null,
+		direccion int not null
+        );
+        
+        //alumnos
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //profesores
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+		insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //preceptores
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //directivos
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //auxiliares
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //establecimiento
+        insert into tabla (registros de atributos) values;
+        
+        //escuela
+        insert into tabla (registros de atributos) values;
+        
+        //laboratorio
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //aulas
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        
+        
+        //persona
+        //alumnos
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //profe
+                 insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+         insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+		insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //prece
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //auxiliares
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        //directivos
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        insert into tabla (registros de atributos) values;
+        
+        
