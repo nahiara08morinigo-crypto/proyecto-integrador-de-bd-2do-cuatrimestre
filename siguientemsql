@@ -1,0 +1,43 @@
+ //preceptores
+    insert into preceptores(1,"1,1;1,2","tarde") values;
+   insert into preceptores(2,"2,1:2,2","tarde") values;
+   insert into preceptores(3,"3,1;3,2","mañana") values;
+   insert into preceptores(4,"4,1;4,2","tarde") values;
+   insert into preceptores(5,"5,1;5,2","mañana") values;
+    
+    //directivos
+    insert into directivos (1,"Director") values;
+    insert into directivos (8,"subdirector") values;
+    insert into directivos (7,"secretario") values;
+    
+    //auxiliares
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    insert into tabla (registros de atributos) values;
+    
+    //establecimiento
+    insert into establecimiento (345345,6,1) values;
+    
+    //escuela
+    insert into escuela (62376,"Manuel Belgrano","informatica y Economia Alministrativa","Avenida San Martin 1250") values;
+    
+    //laboratorio
+    insert into laboratorio (8573,4,16,16,8) values;
+    insert into laboratorio (9786,2,16,16,8) values;
+    
+    //aulas
+    insert into aulas (8754,16,16,10,16) values;
+    insert into aulas (9835,16,16,6,16) values;
+    insert into aulas (7853,16,16,8,16) values;
+    insert into aulas (5765,14,14,9,14) values;
+    insert into aulas (7834,16,16,12,16) values;
+    insert into aulas (8956,16,16,3,16) values;
+    insert into aulas (8423,16,16,5,16) values;
+    insert into aulas (5784,16,16,1,16) values;
+    
