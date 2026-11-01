@@ -1,0 +1,18 @@
+insert into enfermedades(1, "dengue", "enfermedad viral febril aguda transmitida por la picadura de mosquitos hembra infectados", "la familia Flaviviridae") values;
+    insert into enfermedades(2, "covid", "enfermedad infecciosa aguda del aparato respiratorio causada por el virus SARS-CoV-2","SARS-CoV-2 ") values;
+    insert into enfermedades(3,"gripe A","enfermedad infecciosa respiratoria aguda y altamente contagiosa causada por distintos subtipos del virus de la influenza A","virus de la influenza A") values
+    
+    insert into reportes(4,"10 de octubre",14 600 000,9.508) values;
+    insert into reportes(5,"3 de marzo de 2020",704 000 000,7.010.000) values;
+    insert into reportes(6,"11 de junio de 2009",1.108.586,150.000) values;
+    
+    
+    insert into provincia(7,"Salta","Noroeste Argentino") values;
+    insert into provincia(8,"Ciudad Autónoma de Buenos Aires","Region Pampeana") values;
+    insert into provincia(9,"Ciudad Autónoma de Buenos Aires","Region Pampeana") values;
+    
+    
+
+	select * from enfermedades;
+    select * from reportes;
+    select * from provincia;
