@@ -16,3 +16,18 @@ SELECT * FROM Provincia WHERE nombre LIKE 'B%';
 SELECT * FROM Provincia WHERE region = 'Norte';
 
 SELECT * FROM enfermedades WHERE agentecasual LIKE '%V%';
+
+SELECT * FROM reportes
+INNER JOIN enfermedades
+ON reportes.idenfermedad = enfermedades.idenfermedad;
+
+SELECT * FROM reportes
+LEFT JOIN Provincia
+ON reportes.idprovincia = Provincia.idprovincia;
+
+SELECT * FROM reportes
+RIGHT JOIN enfermedades
+ON reportes.idenfermedad = enfermedades.idenfermedad;
+
+
+nose si esta bien tengo q averiguar,¿lfaldwadawd
