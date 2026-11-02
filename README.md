@@ -1,4 +1,3 @@
-# proyecto-integrador-de-bd-2do-cuatrimestre
 create schema BD_Secundaria;
 use BD_Secundaria;
 create table Escuela(
@@ -52,10 +51,10 @@ create table Escuela(
         );
          create table persona(
 		idpersona Int primary key not null,
-       nombre int not null,
-		apellido int not null,
+       nombre varchar(30) not null,
+		apellido varchar(30) not null,
 		telefono int not null,
-		direccion int not null
+		direccion (30) not null
         );
         
         //alumnos
@@ -259,194 +258,192 @@ create table Escuela(
         insert into profesores (186, "4to1ra-5to1ra", "economía") values;
         insert into profesores (187, "2do1ra-2do2da-3ro1ra-3ro2da-4to1ra-4to2da-5to1ra-5to2da", "geografia") values;
         
-        //preceptores
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        
-        //directivos
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        
-        //auxiliares
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        
-        //establecimiento
-        insert into tabla (registros de atributos) values;
-        
-        //escuela
-        insert into tabla (registros de atributos) values;
-        
-        //laboratorio
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        
-        //aulas
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
-        insert into tabla (registros de atributos) values;
+       //preceptores
+    insert into preceptores(300,"1,1;1,2","tarde") values;
+   insert into preceptores(301,"2,1:2,2","tarde") values;
+   insert into preceptores(302,"3,1;3,2","mañana") values;
+   insert into preceptores(303,"4,1;4,2","tarde") values;
+   insert into preceptores(304,"5,1;5,2","mañana") values;
+    
+    //directivos
+    insert into directivos (902,"Director") values;
+    insert into directivos (901,"subdirector") values;
+    insert into directivos (900,"secretario") values;
+    
+    //auxiliares
+    insert into auxiliares (800, limpieza) values;
+    insert into auxiliares (801, limpieza) values;
+    insert into auxiliares (802, limpieza) values;
+    insert into auxiliares (803, limpieza) values;
+    insert into auxiliares (804, limpieza) values;
+    insert into auxiliares (805, porteria) values;
+    insert into auxiliares (806, porteria) values;
+    insert into auxiliares (807, cocina) values;
+    insert into auxiliares (808, cocina) values;
+    
+    //establecimiento
+    insert into establecimiento (345345,6,1) values;
+    
+    //escuela
+    insert into escuela (62376,"Manuel Belgrano","informatica y Economia Alministrativa","Avenida San Martin 1250") values;
+    
+    //laboratorio
+    insert into laboratorio (8573,4,16,16,8) values;
+    insert into laboratorio (9786,2,16,16,8) values;
+    
+    //aulas
+    insert into aulas (8754,16,16,10,16) values;
+    insert into aulas (9835,16,16,6,16) values;
+    insert into aulas (7853,16,16,8,16) values;
+    insert into aulas (5765,14,14,9,14) values;
+    insert into aulas (7834,16,16,12,16) values;
+    insert into aulas (8956,16,16,3,16) values;
+    insert into aulas (8423,16,16,5,16) values;
+    insert into aulas (5784,16,16,1,16) values;
+    
         
         
         
         //persona
         //alumnos
-         insert into persona (188, nombre, apellido, 11-0000-0001, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0002, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0003, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0004, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0005, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0006, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0007, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0008, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0009, direccion) values;
-        insert into persona (188, nombre, apellido, 11-0000-0010, direccion) values;
-         insert into persona (188, nombre, apellido, 11-0000-0011, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion)values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
-        insert into persona (188, nombre, apellido, 1134456789, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000001, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000002, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000003, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000004, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000005, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000006, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000007, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000008, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000009, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000010, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000011, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000012, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000013, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000014, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000015, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000016, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000017, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000018, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000019, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000020, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000021, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000022, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000023, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000024, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000025, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000026, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000027, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000028, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000029, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000030, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000031, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000032, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000033, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000034, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000035, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000036, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000037, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000038, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000039, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000040, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000041, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000042, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000043, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000044, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000045, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000046, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000047, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000048, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000049, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000050, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000051, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000052, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000053, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000054, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000055, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000056, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion)values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+         insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
+        insert into persona (188, nombre, apellido, 1100000057, direccion) values;
         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
         insert into persona (188, nombre, apellido, 1134456789, direccion) values;
          insert into persona (188, nombre, apellido, 1134456789, direccion) values;
