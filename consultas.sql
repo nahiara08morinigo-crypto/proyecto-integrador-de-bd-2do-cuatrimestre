@@ -28,6 +28,3 @@ ON reportes.idprovincia = Provincia.idprovincia;
 SELECT * FROM reportes
 RIGHT JOIN enfermedades
 ON reportes.idenfermedad = enfermedades.idenfermedad;
-
-
-nose si esta bien tengo q averiguar,¿lfaldwadawd
