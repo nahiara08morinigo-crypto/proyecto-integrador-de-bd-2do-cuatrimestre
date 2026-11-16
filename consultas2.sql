@@ -13,7 +13,7 @@ SELECT * FROM aulas;
 SELECT * FROM laboratorios;
 SELECT * FROM persona;
 
-SELECT * FROM alumnos WHERE edad > 18;
+SELECT * FROM alumnos WHERE edad < 18;
 SELECT * FROM profesores WHERE materia = 'Matematica';
 SELECT * FROM preceptores WHERE turno = 'Mañana';
 
@@ -36,7 +36,7 @@ SELECT * FROM aulas;
 SELECT * FROM laboratorios;
 SELECT * FROM persona;
 
-SELECT * FROM alumnos WHERE edad > 18;
+SELECT * FROM alumnos WHERE edad < 18;
 SELECT * FROM profesores WHERE materia = 'Matematica';
 SELECT * FROM preceptores WHERE turno = 'Mañana';
 
