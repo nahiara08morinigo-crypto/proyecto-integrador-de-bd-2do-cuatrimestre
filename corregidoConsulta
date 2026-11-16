@@ -1,0 +1,250 @@
+USE BD_Secundaria;
+
+create table Escuela(
+		idescuela Int primary key not null,
+        nombre varchar (30) not null,
+       carrera varchar (30) not null,
+        direccion varchar (30) not null
+        );
+	create table Directivos(
+		iddirectivos Int primary key not null,
+		cargo varchar (30) not null
+        );
+        create table profesores(
+		idprofesores Int primary key not null,
+        cursos_a_cargo varchar (30) not null,
+		materia varchar (30) not null
+        );
+        create table alumnos(
+		idalumnos Int primary key not null,
+        edad int not null,
+        sexo varchar (30) not null,
+		curso varchar (30) not null
+        );
+        create table auxiliar(
+		idauxiliares Int primary key not null,
+        funcion varchar (30) not null
+        );
+        create table preceptores(
+		idpreceptores Int primary key not null,
+        cursos_a_cargo varchar (30) not null,
+		turno varchar (30) not null
+        );
+        create table establecimiento(
+		idestablecimiento Int primary key not null,
+        baños int not null,
+        bibliotecas int not null
+        );
+        create table aulas(
+		idaulas Int primary key not null,
+        numero_sillas int not null,
+        numero_mesas int not null,
+        numero_aulas int not null,
+		numero_alumnos int not null
+        );
+        create table laboratorios(
+		idlaboratorios Int primary key not null,
+       numero_laboratorio int not null,
+		cantidad_pc	int not null,
+		cantidad_mesa int not null,
+		cantidad_sillas int not null
+        );
+         create table persona(
+		idpersona Int primary key not null,
+       nombre varchar (45) not null,
+		apellido varchar (45) not null,
+		telefono varchar (20) not null,
+		direccion varchar (45) not null
+        );
+
+-- CONSULTAS DE ESCUELA
+SELECT * FROM Escuela;
+
+SELECT nombre, carrera
+FROM Escuela;
+
+SELECT *
+FROM Escuela
+WHERE carrera = 'informatica y Economia Alministrativa';
+
+
+-- CONSULTAS DE DIRECTIVOS
+SELECT * FROM Directivos;
+
+SELECT *
+FROM Directivos
+WHERE cargo = 'Director';
+
+
+-- CONSULTAS DE PROFESORES
+SELECT * FROM profesores;
+
+SELECT *
+FROM profesores
+WHERE materia = 'matemáticas';
+
+SELECT materia
+FROM profesores
+ORDER BY materia ASC;
+
+SELECT COUNT(*) AS total_profesores
+FROM profesores;
+
+
+-- CONSULTAS DE ALUMNOS
+SELECT * FROM alumnos;
+
+SELECT *
+FROM alumnos
+WHERE edad = 13;
+
+SELECT *
+FROM alumnos
+WHERE curso = '1ro1ra';
+
+SELECT *
+FROM alumnos
+WHERE sexo = 'femenino';
+
+SELECT *
+FROM alumnos
+WHERE sexo = 'masculino';
+
+SELECT COUNT(*) AS total_alumnos
+FROM alumnos;
+
+SELECT curso, COUNT(*) AS cantidad_alumnos
+FROM alumnos
+GROUP BY curso;
+
+SELECT edad, COUNT(*) AS cantidad_alumnos
+FROM alumnos
+GROUP BY edad
+ORDER BY edad;
+
+
+-- CONSULTAS DE AUXILIARES
+SELECT * FROM axiliares;
+
+SELECT *
+FROM axiliares
+WHERE funcion = 'limpieza';
+
+
+-- CONSULTAS DE PRECEPTORES
+SELECT * FROM preceptores;
+
+SELECT *
+FROM preceptores
+WHERE turno = 'mañana';
+
+SELECT *
+FROM preceptores
+WHERE turno = 'tarde';
+
+
+-- CONSULTAS DE ESTABLECIMIENTO
+SELECT * FROM establecimiento;
+
+SELECT baños, bibliotecas
+FROM establecimiento;
+
+
+-- CONSULTAS DE AULAS
+SELECT * FROM aulas;
+
+SELECT *
+FROM aulas
+WHERE numero_alumnos = 16;
+
+SELECT *
+FROM aulas
+ORDER BY numero_aulas ASC;
+
+SELECT SUM(numero_aulas) AS total_aulas
+FROM aulas;
+
+SELECT SUM(numero_sillas) AS total_sillas
+FROM aulas;
+
+SELECT SUM(numero_mesas) AS total_mesas
+FROM aulas;
+
+
+-- CONSULTAS DE LABORATORIOS
+SELECT * FROM laboratorios;
+
+SELECT *
+FROM laboratorios
+WHERE cantidad_pc >= 16;
+
+SELECT SUM(cantidad_pc) AS total_computadoras
+FROM laboratorios;
+
+SELECT SUM(cantidad_mesa) AS total_mesas
+FROM laboratorios;
+
+SELECT SUM(cantidad_sillas) AS total_sillas
+FROM laboratorios;
+
+
+-- CONSULTAS DE PERSONAS
+SELECT * FROM persona;
+
+SELECT *
+FROM persona
+WHERE direccion = 'alumnos';
+
+SELECT *
+FROM persona
+WHERE direccion = 'profesor';
+
+SELECT *
+FROM persona
+WHERE direccion = 'preceptor';
+
+SELECT *
+FROM persona
+WHERE direccion = 'auxiliar';
+
+SELECT *
+FROM persona
+WHERE direccion = 'directora';
+
+SELECT COUNT(*) AS total_personas
+FROM persona;
+
+SELECT nombre, apellido
+FROM persona
+ORDER BY apellido ASC;
+
+
+-- CONSULTAS GENERALES
+SELECT COUNT(*) AS total_alumnos
+FROM alumnos
+WHERE curso LIKE '1ro%';
+
+SELECT COUNT(*) AS alumnos_de_segundo
+FROM alumnos
+WHERE curso LIKE '2do%';
+
+SELECT COUNT(*) AS alumnos_de_tercero
+FROM alumnos
+WHERE curso LIKE '3ro%';
+
+SELECT COUNT(*) AS alumnos_de_cuarto
+FROM alumnos
+WHERE curso LIKE '4to%';
+
+SELECT COUNT(*) AS alumnos_de_quinto
+FROM alumnos
+WHERE curso LIKE '5to%';
+
+SELECT materia, cursos_a_cargo
+FROM profesores
+ORDER BY materia;
+
+SELECT curso, sexo, COUNT(*) AS cantidad
+FROM alumnos
+GROUP BY curso, sexo
+ORDER BY curso, sexo;
