@@ -2,5 +2,75 @@ DATOS DEL DIA 30/10
 
 Solo se le agrego unos cambios al codigo de el esquema de la escuela
 
-como el codigo de consulta
+como el codigo de consulta que hizo benitez. habia probado ese dia para ver si estaba bien hecho, cosa que si lo estaba.
+
+create schema BD_Enfermedades_Argentina;
+use BD_Enfermedades_Argentina;
+create table enfermedades(
+		idenfermedad Int primary key not null,
+        nombre varchar (100) not null,
+       descripcion varchar (100) not null,
+		agentecasual varchar (100) not null
+        );
+	create table reportes(
+		idreportes Int primary key not null,
+        fecha_reporte varchar (100) not null,
+        cantidad_casos int not null,
+		cantidad_fellecidos int not null
+        );
+        create table Provincia(
+		idprovincia Int primary key not null,
+        nombre varchar (100) not null,
+        region varchar (100) not null
+        );
+	   
+	insert into enfermedades values(1, "dengue", "enfermedad viral febril aguda transmitida por la picadura de mosquitos hembra infectados", "la familia Flaviviridae");
+    insert into enfermedades values(2, "covid", "enfermedad infecciosa aguda del aparato respiratorio causada por el virus SARS-CoV-2","SARS-CoV-2 ") ;
+    insert into enfermedades values(3,"gripe A","enfermedad infecciosa respiratoria aguda y altamente contagiosa causada por distintos subtipos del virus de la influenza A","virus de la influenza A");
+    
+    insert into reportes values(4,"10 de octubre",14600000,9508);
+    insert into reportes values(5,"3 de marzo de 2020",704000000,7010000);
+    insert into reportes values(6,"11 de junio de 2009",1108586,150000);
+    
+    
+    insert into provincia values (7,"Salta","Noroeste Argentino");
+    insert into provincia values (8,"Ciudad Autónoma de Buenos Aires","Region Pampeana");
+    insert into provincia values (9,"Ciudad Autónoma de Buenos Aires","Region Pampeana");
+    
+    
+
+	select * from enfermedades;
+    select * from reportes;
+    select * from provincia;
+    
+
+USE BD_Enfermedades_Argentina;
+
+SELECT * FROM enfermedades;
+SELECT * FROM reportes;
+SELECT * FROM Provincia;
+
+SELECT * FROM enfermedades WHERE nombre LIKE 'A%';
+SELECT * FROM enfermedades WHERE nombre LIKE '%S';
+
+SELECT * FROM reportes WHERE cantidad_casos BETWEEN 100 AND 1000;
+SELECT * FROM reportes WHERE cantidad_fellecidos BETWEEN 10 AND 500;
+
+SELECT * FROM Provincia WHERE nombre LIKE 'B%';
+SELECT * FROM Provincia WHERE region = 'Norte';
+
+SELECT * FROM enfermedades WHERE agentecasual LIKE '%V%';
+
+SELECT * FROM reportes
+INNER JOIN enfermedades
+ON reportes.idenfermedad = enfermedades.idenfermedad;
+
+SELECT * FROM reportes
+LEFT JOIN Provincia
+ON reportes.idprovincia = Provincia.idprovincia;
+
+SELECT * FROM reportes
+RIGHT JOIN enfermedades
+ON reportes.idenfermedad = enfermedades.idenfermedad;
+
 
