@@ -1,3 +1,5 @@
+Solo se agrego el codigo de consulta de la escuela como prueba, esta con el codigo completo para probar y tenerlo completo.
+
 # proyecto-integradocreate schema BD_Secundaria;
 use bd_Secundaria;
 create table Escuela(
